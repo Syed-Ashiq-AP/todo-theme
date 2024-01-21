@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="./script/script.js" async></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+
+<body class="dark">
+
+  <section class="bg-elems">
+
+    <img src="./images/bg-desktop-light.jpg" class="light-img">
+    <img src="./images/bg-mobile-light.jpg" class="light-img-mobile">
+    <img src="./images/bg-desktop-dark.jpg" class="dark-img">
+    <img src="./images/bg-mobile-dark.jpg" class="dark-img-mobile">
+    <section class="bottom-bg">
+
+    </section>
+
+  </section>
+  <section class="contain">
+    <section class="top-bar">
+      <h1>TODO</h1>
+      <img onclick="tgl_mode()" src="./images/icon-moon.svg" class="moon">
+      <img onclick="tgl_mode()" src="./images/icon-sun.svg" class="sun">
+    </section>
+    <section class="add-todo">
+      <section>
+        <input disabled type="checkbox">
+      </section>
+      <input onkeydown="addTodo(this)" type="text" placeholder="Create a new todo...">
+    </section>
+
+    <section class="md-bar">
+      <section class="todos drag-sort-enable">
+        
+      </section>
+      <section class="bottom-bar">
+        <section class="left">
+          <p class="count">6 items left</p>
+        </section>
+        <section class="right">
+          <p onclick="set_filter(0)" class="fall t-active">All</p>
+          <p onclick="set_filter(1)" class="fact">Active</p>
+          <p onclick="set_filter(2)" class="fcomp">Completed</p>
+        </section>
+        <p onclick="clearComp()">Clear Completed</p>
+      </section>
+
+    </section>
+    <p class="drag">Drag and drop to reorder list</p>
+  </section>
+
+</body>
+
+</html>
