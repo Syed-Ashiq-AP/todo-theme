@@ -298,7 +298,7 @@ input[type=checkbox]:checked +img{
     .dark .dark-img-mobile, .light .light-img-mobile{
         display: block;
     }
-    .dark-img{
+    .dark-img,.light-img{
         display: none;
     }
 
