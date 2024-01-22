@@ -89,9 +89,9 @@ function filetTodo() {
                 comp_class = 'completed'
                 inpc = 'checked'
             }
-            let html = `<section class="todo" onclick='set_check(this.children[0].checked,` + k + `)'>
+            let html = `<section class="todo" onclick='set_check(this.children[0].children[0],` + k + `,true)'>
         <section class="chk">
-          <input `+ inpc + ` type="checkbox">
+          <input onclick='set_check(this.checked,`+ k + `)' `+ inpc + ` type="checkbox">
           <img src="./images/icon-check.svg" class="check">
         </section>
         <p class='`+ comp_class + `'>` + v.name + `</p>
